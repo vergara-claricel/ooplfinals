@@ -1,0 +1,187 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 50%; /* Make container width smaller */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input[type="text"], input[type="number"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Ensures padding doesn't exceed the element's width */
+}
+
+.questionsform {
+    margin-top: 20px;
+    display: none;
+}
+
+.questionslist, .studentslist {
+    margin-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: 1px solid gray;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+
+.questionslist p, .studentslist p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.question-actions form {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.listcontainer {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+}
+
+.questionslist {
+    flex: 0.9;
+}
+
+.savequizbtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 8px 20px;
+}
+
+.addbtns {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+#addquestion, #addstudents {
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.savequiz {
+    font-weight: 600;
+}
+
+.question-box {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.question-content {
+    margin-bottom: 15px;
+}
+
+.question-text {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+}
+
+.question-actions {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.action-form {
+    display: inline-block;
+}
+
+.edit-button, .delete-button {
+    padding: 8px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.delete-button {
+    background-color: #f44336;
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: #45a049;
+}
+
+.delete-button:hover {
+    background-color: #d32f2f;
+}
+
+/* Ensure the buttons are aligned well on mobile */
+@media (max-width: 600px) {
+    .question-box {
+        padding: 10px;
+    }
+
+    .question-text {
+        font-size: 16px;
+    }
+
+    .question-actions {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .edit-button, .delete-button {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .container {
+        width: 90%; /* Container takes more space on smaller screens */
+    }
+}
